@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+        body {
+            background-image: url('https://yourwebsite.com/path/to/your/static-background-image.jpg'); /* Replace with a valid URL */
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: rgb(164, 245, 245);
+            font-family: 'Russo One', sans-serif;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid black;
+            max-width: 600px;
+            margin: auto;
+            text-align: center; /* Center align text */
+        }
+
+        /* Apply text shadow to all text elements within the form */
+        form label,
+        form input,
+        form textarea,
+        form select,
+        form button {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Horizontal offset, vertical offset, blur radius, color */
+        }
+
+        .animated-image {
+            width: 100px; /* Set the size as needed */
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form action="submit_button" method="post">
+        <!-- Animated image -->
+        <img src="https://media.giphy.com/media/3o7TKyQTxLvx9M5t2w/giphy.gif" alt="Animated Emoji" class="animated-image">
+
+        <label for="fname">F_Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="mname">M_Name:</label>
+        <input type="text" id="mname" name="mname"><br><br>
+
+        <label for="lname">L_Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label>Gender:
+            <input type="radio" name="gender" id="male" value="male"> Male
+            <input type="radio" name="gender" id="female" value="female"> Female
+        </label><br><br>
+
+        <label for="password">Enter password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirm_password">Confirm password:</label>
+        <input type="password" id="confirm_password" name="confirm_password"><br><br>
+        
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="6" cols="29"></textarea><br><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" name="hobbies" value="cricket"> Cricket
+        <input type="checkbox" name="hobbies" value="football"> Football
+        <input type="checkbox" name="hobbies" value="badminton"> Badminton
+        <input type="checkbox" name="hobbies" value="chess"> Chess<br><br>
+        
+        <label for="mob">Enter Mobile:</label>
+        <input type="text" id="mob" name="mob"><br><br>
+        
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="cp">CP</option>
+            <option value="it">IT</option>
+            <option value="csd">CSD</option>
+        </select><br><br>
+        
+        <label for="resume">Upload resume:</label>
+        <input type="file" id="resume" name="resume"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
