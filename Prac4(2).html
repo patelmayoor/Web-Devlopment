@@ -1,14 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Prac4(2).css">
-    <title>CSS3 Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 3 Programming Practical</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .shadow {
+      box-shadow: 10px 10px 5px #888888;
+    }
+    .orientation {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+    .transformation {
+      transform: rotate(45deg) scale(1.5);
+    }
+    .gradient {
+      background-image: linear-gradient(to bottom, #f2f2f2, #cccccc);
+    }
+    .rounded {
+      border-radius: 10px;
+    }
+    .opacity {
+      opacity: 0.8;
+    }
+    .transition {
+      transition: background-color 0.5s ease-in-out;
+    }
+    .animation {
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="box shadow"></div>
-    <p class="text">This is a text with shadow</p>
-    <div class="gradient"></div>
+  <div class="shadow orientation transformation gradient rounded opacity transition animation" style="width: 200px; height: 200px; padding: 20px; border: 1px solid #ddd; font-size: 24px; text-align: center; margin: 50px auto;">CSS 3 Programming Practical</div>
 </body>
 </html>
