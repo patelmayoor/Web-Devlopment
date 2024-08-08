@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript Practical</title>
+</head>
+<body>
+    <h1>Basic JavaScript Practical</h1>
+    <script>
+      
+        alert("Welcome to JavaScript!");
+
+     
+        document.write("Hello, World!");
+
+ 
+        function greet(name) {
+            document.write(`Hello, ${name}!`);
+        }
+        greet("John");
+
+
+        let colors = ["Red", "Green", "Blue"];
+        document.write(`<br>Colors: ${colors}`);
+
+  
+        for (let i = 0; i < colors.length; i++) {
+            document.write(`<br>Color ${i + 1}: ${colors[i]}`);
+        }
+
+      let age = 25;
+        if (age >= 18) {
+            document.write(`<br>You are an adult.`);
+        } else {
+            document.write(`<br>You are a minor.`);
+        }
+    </script>
+</body>
+</html>
